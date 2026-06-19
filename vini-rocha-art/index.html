@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Vini Rocha Art | Portfólio de Arte Visual</title>
+  <meta name="description" content="Explore o portfólio de arte visual de Vinicius Rocha. Ilustrações contemporâneas, projetos de design e contato direto com o artista.">
+  <meta name="keywords" content="Vini Rocha, Vinicius Rocha, Artista Visual, Pintura Digital, Ilustração, Design Editorial, Branding, Minimalismo">
+  <meta name="author" content="Vinicius Rocha">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vinirocha.art/">
+  <meta property="og:title" content="Vini Rocha Art | Portfólio de Arte Visual">
+  <meta property="og:description" content="Explore o portfólio de arte visual de Vinicius Rocha. Ilustrações contemporâneas, projetos de design e contato direto com o artista.">
+  <meta property="og:image" content="assets/illustrations/art_abstract.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://vinirocha.art/">
+  <meta property="twitter:title" content="Vini Rocha Art | Portfólio de Arte Visual">
+  <meta property="twitter:description" content="Explore o portfólio de arte visual de Vinicius Rocha. Ilustrações contemporâneas, projetos de design e contato direto com o artista.">
+  <meta property="twitter:image" content="assets/illustrations/art_abstract.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Top loading indicator for SPA transition -->
+  <div class="page-loading-bar"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#home" class="logo" id="logo-link">
+        Vini Rocha <span>Art</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop">
+        <a href="#ilustracoes" class="nav-link" id="nav-ilustracoes">Ilustrações</a>
+        <a href="#projetos" class="nav-link" id="nav-projetos">Projetos</a>
+        <a href="#fale-comigo" class="nav-link" id="nav-fale-comigo">Fale Comigo</a>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" id="hamburger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Menu -->
+  <nav class="nav-mobile" id="mobile-menu-overlay">
+    <a href="#ilustracoes" class="nav-mobile-link">Ilustrações</a>
+    <a href="#projetos" class="nav-mobile-link">Projetos</a>
+    <a href="#fale-comigo" class="nav-mobile-link">Fale Comigo</a>
+  </nav>
+
+  <!-- Main View Container -->
+  <main id="main-content">
+
+    <!-- 1. HOME VIEW -->
+    <section id="home" class="view-section active">
+      <div class="hero-section container">
+        <h1 class="hero-title scroll-fade-in in-view">
+          Vini Rocha<br><span>Art</span>
+        </h1>
+        <div class="scroll-indicator">
+          <span>Rolar</span>
+        </div>
+      </div>
+      
+      <!-- Vertical gallery flow with parallax scroll -->
+      <div class="vertical-gallery container">
+        <!-- Rendered dynamically via js/main.js -->
+      </div>
+    </section>
+
+    <!-- 2. ILUSTRAÇÕES VIEW -->
+    <section id="ilustracoes" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Ilustrações</h1>
+          <p class="section-subtitle">Explorações visuais autorais, texturas, composições geométricas e narrativas digitais contemporâneas.</p>
+        </div>
+        <div class="illustrations-grid">
+          <!-- Rendered dynamically via js/gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJETOS VIEW -->
+    <section id="projetos" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Projetos</h1>
+          <p class="section-subtitle">Direções de arte, design editorial de catálogos e identidades visuais desenvolvidas para marcas e exposições.</p>
+        </div>
+        <div class="projects-grid">
+          <!-- Rendered dynamically via js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJETO DETALHE VIEW (Dinamico) -->
+    <section id="projeto-detalhe" class="view-section">
+      <!-- Rendered dynamically via js/projects.js -->
+    </section>
+
+    <!-- 5. FALE COMIGO VIEW -->
+    <section id="fale-comigo" class="view-section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Fale Comigo</h1>
+          <p class="section-subtitle">Sobre o artista e canais de comunicação para projetos, encomendas ou bate-papo.</p>
+        </div>
+        
+        <div class="fale-comigo-grid">
+          <!-- Left Column: About & CTA -->
+          <div class="about-panel scroll-fade-in">
+            <p class="artist-about-text">
+              "Vinicius Rocha é um artista que encontrou na arte uma forma de expressar suas ideias, emoções e visão de mundo. Seu trabalho mistura criatividade, sensibilidade e identidade visual única."
+            </p>
+            <div class="cta-button-container">
+              <!-- WhatsApp integration prepared -->
+              <a href="https://wa.me/5500999999999?text=Olá%20Vini,%20gostei%20muito%20do%20seu%20portfólio!%20Gostaria%20de%20conversar%20sobre%20um%20trabalho." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="cta-button" 
+                 id="whatsapp-cta">
+                <span>Falar com Vini</span>
+                <span class="cta-icon">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Social Links -->
+          <div class="social-panel scroll-fade-in">
+            <h3 class="social-links-title">Canais de Contato</h3>
+            <div class="social-links-grid">
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-item-link" id="social-instagram">
+                <span class="social-icon">↗</span>
+                <span>Instagram</span>
+              </a>
+              <a href="https://behance.net/" target="_blank" rel="noopener noreferrer" class="social-item-link" id="social-behance">
+                <span class="social-icon">↗</span>
+                <span>Behance</span>
+              </a>
+              <a href="mailto:vini.rocha.art@gmail.com" class="social-item-link" id="social-email">
+                <span class="social-icon">✉</span>
+                <span>vini.rocha.art@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox Modal (Full Screen Image Viewer) -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens">
+    <div class="lightbox-container">
+      <button class="lightbox-close" aria-label="Fechar visualizador" id="lightbox-close-btn">&times;</button>
+      
+      <div class="lightbox-image-wrapper">
+        <button class="lightbox-nav-btn lightbox-prev" aria-label="Imagem anterior" id="lightbox-prev-btn">‹</button>
+        <img src="" alt="" class="lightbox-img" id="lightbox-main-img">
+        <button class="lightbox-nav-btn lightbox-next" aria-label="Próxima imagem" id="lightbox-next-btn">›</button>
+      </div>
+
+      <div class="lightbox-details">
+        <h2 class="lightbox-title">Título da Obra</h2>
+        <p class="lightbox-desc">Descrição curta da obra.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        Vini Rocha <span>Art</span>
+      </div>
+      <div class="footer-copy">
+        &copy; <span id="current-year">2026</span> Vini Rocha Art. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/gallery.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/router.js"></script>
+  <script>
+    // Set current year in footer dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
