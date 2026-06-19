@@ -1,0 +1,46 @@
+/* Import modern, premium Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* Color Palette */
+  --color-bg: #0A0A0A;          /* Preto Profundo */
+  --color-text: #F0EDE8;        /* Off-white */
+  --color-accent: #FF6B35;      /* Laranja Vibrante */
+  --color-surface: #121212;     /* Surface muito escuro */
+  --color-card-bg: #1A1A1A;     /* Cinza Escuro para Cards */
+  --color-muted: #888888;        /* Cinza Médio para textos secundários */
+  --color-border: #2A2A2A;      /* Cinza Médio para bordas */
+
+  /* Typography */
+  --font-headings: 'Playfair Display', Georgia, serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Font Sizes */
+  --fs-hero: clamp(3rem, 8vw, 7rem);
+  --fs-h1: clamp(2rem, 5vw, 3.5rem);
+  --fs-h2: clamp(1.5rem, 4vw, 2.5rem);
+  --fs-h3: clamp(1.2rem, 3vw, 1.8rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* Spacings */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Header & Navigation */
+  --header-height: 80px;
+  --header-blur: 12px;
+
+  /* Design details */
+  --border-radius: 4px;
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s ease;
+  
+  /* Z-index hierarchy */
+  --z-header: 100;
+  --z-menu-mobile: 200;
+  --z-lightbox: 300;
+}
